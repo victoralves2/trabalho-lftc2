@@ -138,7 +138,7 @@ def carregar_mt(nome_arquivo) -> MaquinaTuring:
         print(f"    - Transições carregadas: {len(transicoes)}")
         
         if not transicoes or not inicial:
-            print("⚠️ ALERTA: O arquivo está com formato inválido.")
+            print("ALERTA: O arquivo está com formato inválido.")
             
         return MaquinaTuring(estados, alfabeto, inicial, finais, transicoes)
     
@@ -249,7 +249,7 @@ def main():
                 elif sub_escolha == '5':
                     break
                 else:
-                    print("⚠️ Opção inválida! Tente novamente.")
+                    print("Opção inválida! Tente novamente.")
                     
         elif escolha == '2':
             executar_maquina("arquivo_mt.txt")
