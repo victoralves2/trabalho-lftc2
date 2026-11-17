@@ -17,13 +17,13 @@ class MaquinaTuring():
 def criar_arquivos_pre_carregados():
     """Cria automaticamente todos os arquivos de configuração se não existirem."""
     arquivos = {
-        "inversor.txt": """e{0,1}
+        "inversor.txt": """e{q0,q1}
 a{0,1}
-i0
-f{1}
-(0,0){0,1,R}
-(0,1){0,0,R}
-(0,B){1,B,R}
+iq0
+f{q1}
+(q0,0){q0,1,R}
+(q0,1){q0,0,R}
+(q0,B){q1,B,R}
 """,
         "par_de_as.txt": """e{q0,q1,q_aceita}
 a{a,b}
@@ -258,7 +258,7 @@ def main():
             print("\nFIM do programa. Até logo!")
             break
         else:
-            print("⚠️ Opção inválida! Por favor, digite 1, 2 ou 3.")
+            print("Opção inválida! Por favor, digite 1, 2 ou 3.")
 
 if __name__ == "__main__":
     main()
